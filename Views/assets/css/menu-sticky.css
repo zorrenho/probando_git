@@ -1,0 +1,109 @@
+.main-header{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.main-header__menu-logo {
+    grid-column: 1;
+    grid-row: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main-header__contactInfo{
+    grid-column: 3;
+    grid-row: 1;
+    display: block;
+    margin: auto;
+}
+
+.bar-menu{
+    width: 100%;    
+    min-height: 100px;    
+    background-color: #34495e;
+    grid-column: 1/4;
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.icon-bar-menu{
+    grid-column: 1;
+    margin: auto;  
+    visibility: hidden;
+}
+
+.nav-menu {
+    grid-column: 2 / 4;    
+    margin-left: -50%;
+    -webkit-transition: all ease .7s;
+    -o-transition: all ease .7s;
+    transition: all ease .7s;
+    display: flex;
+    align-items: center;    
+}
+.nav-menu ul {
+    width: 100%;
+    list-style: none;
+    overflow: hidden;
+    margin-bottom: 0;
+    margin-left: 50px;
+    display: inline-block;
+
+}
+
+    .nav-menu ul li {
+        float: left;
+    }
+
+        .nav-menu ul li a {
+            display: block;
+            padding: 20px;
+            color: #fff;
+            text-decoration: none !important;
+            border-bottom: 6px solid transparent;
+            transition: border 1s ease;
+            font-family: 'Verdana';
+            font-size: 15px;     
+        }
+
+        .nav-menu ul li a:hover {
+            /*background-color: #2e5d8b;*/
+            color: #fff;
+            border-bottom-color: #00d188;
+        }
+
+
+.social-icon{
+    grid-column: 4;    
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    margin-right: 50px;
+}
+
+.social-icon__link{
+    margin: 0.5rem;
+    font-size: 1.50rem;
+    text-decoration: none;
+    color: #eee;
+}
+.social-icon__link .fab{
+    font-family: 'Font Awesome 6 Brands';
+    font-weight: 400;
+}
+
+
+.nav-bar-fixed{
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    width: 100%;
+    min-height: 80px;    
+    box-shadow: 0px 4px 3px rgba(0,0,0,.5);
+}
+
+.nav-menu-fixed{
+    margin-left: -20%;
+}
