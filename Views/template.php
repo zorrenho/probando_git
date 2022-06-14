@@ -16,49 +16,47 @@ class Template
     <head>
       <meta charset="UTF-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">      
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel=”shortcut icon” href=”favicon.ico” mce_href=”favicon.ico” type=”image/x-icon” />
       <link rel="stylesheet" href="<?php echo URL; ?>Views/assets/css/menu-sticky.css">
-      <link rel="stylesheet" href="<?php echo URL; ?>Views/assets/css/general-style.css">
       <link rel="stylesheet" href="<?php echo URL; ?>Views/assets/css/slider.css">
+      <link rel="stylesheet" href="<?php echo URL; ?>Views/assets/css/general-style.css">
       <script src="<?php echo URL; ?>Views/assets/js/jquery.min.js"></script>
       <script src="<?php echo URL; ?>Views/assets/js/menu-nav.js"></script>
+      <script src="<?php echo URL; ?>Views/assets/js/slider.js"></script>
       <title>Proyecto</title>
     </head>
 
     <body>
       <header class="main-header">
-        <div class="main-header__menu-logo">
-          <a href="<?php echo URL; ?>"><img src="<?php echo URL; ?>Views/assets/img/logo.svg" alt="" srcset=""></a>
+        <div class="logo-header">
+            <img src="<?php echo URL; ?>Views/assets/img/logo.svg" alt="" srcset="">
         </div>
-        <div class="main-header__contactInfo">
-          <p class="main-header__contactInfo--phone">
-            <span class="icon-phone">6131300000</span>
-          </p>
-          <p class="main-header__contactInfo--address">
-            <span class="icon-location">Circuito Bahia de Ohuira</span>
-          </p>
+        <div class="info-header">
+        <i class="fa fa-phone"></i></i><p>123456789</p> 
+        <i class="fa fa-map-marker"></i> <p>Av. Conocida</p>
         </div>
-        <div class="bar-menu">
-          <i class="icon-bar-menu" id="icon-bar-menu">menu</i>
+        <div class="bar-menu">          
           <!-- Menu de navegacion -->
           <nav class="nav-menu">
-
-            <ul class="menu" id="menu">
+            <ul class="menu">
               <li><a href="<?php echo URL; ?>">Home</a></li>
               <li><a href="<?php echo URL; ?>estudiantes">Estudiantes</a></li>
               <li><a href="#">Blog</a></li>
               <li><a href="#">Portefolio</a></li>
               <li><a href="#">Contact</a></li>
+              <div class="animation start-home"></div>
             </ul>
           </nav>
-          <div class="social-icon">
-            <a href="http://www.facebook.com" class="social-icon__link"><i class="fab fa-facebook"></i></a>
-            <a href="http://www.instagram.com" class="social-icon__link"><i class="fab fa-instagram"></i></a>
-            <a href="http://www.twitter.com" class="social-icon__link"><i class="fab fa-twitter"></i></a>
-          </div>
+          <section class="header-social">
+          <ul class="header-social-list">
+            <li><a href="#"><i class="fab fa-facebook"></i></a></li>            
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+          </ul>
+        </section>
         </div>
       </header>
-
 
     <?php
   }
@@ -68,7 +66,6 @@ class Template
     ?>
       <link rel="stylesheet" href="<?php echo URL; ?>Views/assets/css/footer-style.css">
       <link rel="stylesheet" href="<?php echo URL; ?>Views/assets/fontawesome/css/all.css">
-      <script src="<?php echo URL; ?>Views/assets/js/slider.js"></script>
       <footer>
         <!-- Footer main -->
         <section class="ft-main">
@@ -112,12 +109,12 @@ class Template
         <!-- Footer social -->
         <section class="ft-social">
           <ul class="ft-social-list">
-            <li><a href="http://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a></li>
-            <li><a href="http://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a></li>
-            <li><a href="http://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a></li>
-            <li><a href="http://www.github.com" target="_blank"><i class="fab fa-github"></i></a></li>
-            <li><a href="http://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-            <li><a href="http://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a></li>
+            <li><a href="#"><i class="fab fa-facebook"></i></a></li>            
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fab fa-github"></i></a></li>
+            <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+            <li><a href="#"><i class="fab fa-youtube"></i></a></li>
           </ul>
         </section>
 

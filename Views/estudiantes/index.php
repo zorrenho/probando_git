@@ -1,6 +1,6 @@
 <h1> Lista de estudiantes </h1>
 <div class="container">
-<table class="table table-hover">
+<table class="table">
     <thead>
         <tr>
             <th>Nombre</th>
